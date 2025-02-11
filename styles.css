@@ -173,7 +173,7 @@ a {
 }
 
 .vertical-menu ul li {
-    margin: 10px 0; /* Reduce spacing to bring higher */
+    margin: 15px 0; /* Reduce spacing to bring higher */
 }
 
 .vertical-menu ul li a {
@@ -190,7 +190,7 @@ a {
 
 /* Adjust Image to be Closer and Larger, Left-Aligned */
 .landing-image {
-    width: 55%; /* Increase size to max possible without touching the menu */
+    width: 50%; /* Increase size to max possible without touching the menu */
     max-width: 700px;
     display: block;
     margin-left: 5; /* Align fully to the left */
