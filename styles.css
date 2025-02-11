@@ -278,9 +278,14 @@ footer {
 }
 
 /* Responsive Design for Mobile */
-@media (max-width: 768px) {
-
+ @media (max-width: 768px) {
     body {
+        background: var(--bg-color) url('grain-texture.png') repeat !important;
+        background-size: cover !important;
+        background-blend-mode: normal !important; /* Disable blending to test */
+    }
+}
+
     font-family: 'JetBrains Mono', monospace;
     background-color: var(--bg-color);
     color: var(--text-color);
