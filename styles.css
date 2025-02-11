@@ -156,14 +156,14 @@ a {
     display: flex;
     align-items: flex-start; /* Align tops of menu and image */
     justify-content: flex-start;
-    padding: 10px 5%;
+    padding: 0px 5%;
 }
 
 /* Adjust Vertical Left-Aligned Menu */
 .vertical-menu {
     flex: 1;
     list-style: none;
-    padding-left: 2%; /* Bring closer to image */
+    padding-left: 0%; /* Bring closer to image */
     margin-top: 0; /* Ensure it aligns at the top */
 }
 
