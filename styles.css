@@ -280,6 +280,7 @@ footer {
 /* Responsive Design for Mobile */
  @media (max-width: 768px) {
     html, body {
+        min-height: 100vh;
         background: var(--bg-color) url('grain-texture.png') repeat !important;
         background-size: cover !important;
         background-blend-mode: normal !important; /* Disable blending to test */
