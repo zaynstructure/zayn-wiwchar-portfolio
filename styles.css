@@ -324,3 +324,12 @@ footer {
     
 
 }
+@media (max-width: 768px) {
+    body {
+        background-color: red !important; /* Force background color for testing */
+        background-image: url('grain-texture.png') !important; /* Ensure correct path */
+        background-repeat: repeat !important;
+        background-size: cover !important;
+    }
+}
+
