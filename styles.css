@@ -188,12 +188,12 @@ a {
     text-decoration: underline;
 }
 
-/* Adjust Image to be Closer and Larger */
+/* Adjust Image to be Closer and Larger, Left-Aligned */
 .landing-image {
-    width: 60%; /* Increase size */
-    max-width: 600px;
+    width: 65%; /* Increase size to max possible without touching the menu */
+    max-width: 700px;
     display: block;
-    margin-left: 3%; /* Reduce space between menu and image */
+    margin-left: 0; /* Align fully to the left */
     position: relative;
 }
 
