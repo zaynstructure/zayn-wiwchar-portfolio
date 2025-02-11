@@ -32,7 +32,7 @@ body {
 /* Header */
 header {
     text-align: center;
-    font-size: 24px;
+    font-size: 48px;
     padding: 20px 0;
     color: var(--accent-color);
     border-bottom: 2px solid var(--border-color);
