@@ -41,14 +41,14 @@ body {
 /* Horizontal Navigation for About Page */
 .horizontal-menu {
     background-color: #222;
-    padding: 15px 0;
+    padding: 20px 0;
     text-align: center;
     border-bottom: 2px solid var(--accent-color);
 }
 
 .horizontal-menu ul {
     list-style: none;
-    padding: 5;
+    padding: 0;
     margin: 0;
 }
 
