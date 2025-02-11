@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
 
 /* Custom Color Variables (Based on Your Artwork) */
 :root {
@@ -27,7 +27,7 @@
 /* Body Styling */
 body {
     font-family: 'JetBrains Mono', monospace;
-    font-weight: 100; /* Thin */
+    font-weight: 200; /* Thin */
     font-style: normal;
     background-color: var(--bg-color);
     color: var(--text-color);
