@@ -240,7 +240,7 @@ a {
     color: var(--accent-color);
     text-align: left;
     margin-bottom: 20px;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
 @media (max-width: 768px) {
@@ -290,7 +290,7 @@ body {
     }
 
     .vertical-menu {
-        text-align: center;
+        text-align: left;
         padding: 0;
     }
 
