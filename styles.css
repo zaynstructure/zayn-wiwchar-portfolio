@@ -33,7 +33,8 @@ body {
 @media (max-width: 768px) {
     body {
         background-image: url('grain-texture (1).png'); /* Use a non-animated version for mobile */
-    }
+       background-blend-mode: multiply;
+    background-size: cover; }
 }
 /* Landing Page Title - Very Large & Left-Aligned */
 .landing-title {
