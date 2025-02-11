@@ -294,7 +294,7 @@ footer {
     .landing-title {
         font-size: 4rem; /* Reduce size for smaller screens */
         text-align: left;
-        padding-left: 30;
+        padding-left: 50;
         color: var(--accent-color);
     }
 
