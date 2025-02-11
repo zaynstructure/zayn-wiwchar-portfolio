@@ -16,6 +16,119 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Body Styling */
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 50px;
+    background-image: url('grain-texture.png'); /* Subtle grain texture */
+    background-blend-mode: multiply;
+    background-size: cover;
+    animation: grain 8s steps(10) infinite;
+}
+
+/* Landing Page Title - Very Large & Left-Aligned */
+.landing-title {
+    font-size: 7rem; /* Very big */
+    color: var(--accent-color);
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 10%;
+}
+
+/* Horizontal Navigation for About Page */
+.horizontal-menu {
+    background-color: #222;
+    padding: 15px 0;
+    text-align: leftr;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.horizontal-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-menu ul li {
+    display: inline;
+    margin: 20px 20px;
+}
+
+.horizontal-menu ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.horizontal-menu ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-left: 2px solid var(--accent-color);
+    background: rgba(26, 26, 26, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(3px);
+}
+
+/* Menu Styling */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.menu ul li a {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* Image Styling for Menu */
+.menu ul li img {
+    width: 80px;
+    height: auto;
+    margin-left: 15px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.menu ul li img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Header */
+header {
+    text-align: center;
+    font-size: 48px;
+    padding: 20px 0;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+/* About Page Styling */
 .content {
     max-width: 800px;
     margin: 20px auto;
@@ -31,33 +144,48 @@ h1, h2, h3 {
     margin-bottom: 15px;
     margin-top: 15px;
 }
-/* Body Styling */
-body {
-    font-family: 'JetBrains Mono', monospace;
-    background-color: var(--bg-color);
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+/* Align Image Closer to Menu & Align Tops */
+.landing-container {
+    display: flex;
+    align-items: flex-start; /* Align tops of menu and image */
+    justify-content: flex-start;
+    padding: 0px 5%; /* Adjust padding to bring everything closer */
+}
+
+/* Adjust Vertical Left-Aligned Menu */
+.vertical-menu {
+    flex: 1;
+    list-style: none;
+    padding-left: 0%; /* Bring even closer to image */
+    margin-top: 0; /* Ensure it aligns at the top */
+}
+
+.vertical-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vertical-menu ul li {
+    margin: 15px 0; /* Reduce spacing to bring higher */
+}
+
+.vertical-menu ul li a {
+    font-size: 2rem;
     color: var(--text-color);
-    padding: 50px;
-    background-image: url('grain-texture.png'); /* Subtle grain texture */
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-attachment: fixed; /* Prevents movement on scroll */
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Landing Page Title - Responsive & Left-Aligned */
-.landing-title {
-    font-size: 7rem; /* Default large size */
-    color: var(--accent-color);
-    text-align: left;
-    margin-bottom: 20px;
-    padding-left: 10%;
-}
-
-@media (max-width: 768px) {
-    .landing-title {
-        font-size: 4rem; /* Reduce size for smaller screens */
-        text-align: center;
-        padding-left: 0;
-    }
+.vertical-menu ul li a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
 }
 
 /* Align Image Closer to Menu & Align Tops */
@@ -99,43 +227,28 @@ body {
 
 /* Adjust Image to be Closer and Larger, Left-Aligned */
 .landing-image {
-    width: 65%; /* Increase size to max possible without touching the menu */
+    width: 55%; /* Increase size to max possible without touching the menu */
     max-width: 700px;
     display: block;
     margin-left: 0; /* Align fully to the left */
     position: relative;
 }
 
-/* Horizontal Navigation for About Page */
-.horizontal-menu {
-    background-color: #222;
-    padding: 10px 0;
-    text-align: center;
-    border-bottom: 2px solid var(--accent-color);
-    margin-bottom: 20px; /* Move closer to the lower border */
+/* Responsive Landing Page Title */
+.landing-title {
+    font-size: 7rem; /* Default large size */
+    color: var(--accent-color);
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 5%;
 }
 
-.horizontal-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.horizontal-menu ul li {
-    display: inline;
-    margin: 15px 15px;
-}
-
-.horizontal-menu ul li a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 8px;
-    transition: color 0.3s ease;
-}
-
-.horizontal-menu ul li a:hover {
-    color: var(--hover-color);
+@media (max-width: 768px) {
+    .landing-title {
+        font-size: 4rem; /* Reduce size for smaller screens */
+        text-align: center;
+        padding-left: 0;
+    }
 }
 
 /* Remove conflicting styles */
@@ -153,11 +266,19 @@ a:hover {
 
 /* Footer */
 footer {
-    margin-top: 30px; /* Reduce space between footer and menu */
+    margin-top: 50px;
     text-align: center;
     color: var(--accent-color);
     font-size: 0.8rem;
     border-top: 2px solid var(--border-color);
+}
+
+/* Fix Animated Texture Flashing */
+body {
+    background-image: url('grain-texture.png'); /* Subtle grain texture */
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed; /* Prevents movement on scroll */
 }
 
 /* Responsive Design for Mobile */
@@ -169,7 +290,7 @@ footer {
     }
 
     .vertical-menu {
-        text-align: center;
+        text-align: left;
         padding: 0;
     }
 
