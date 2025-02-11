@@ -276,46 +276,7 @@ footer {
     border-top: 2px solid var(--border-color);
 }
 
-@media (max-width: 768px) {
-    html, body {
-        min-height: 100vh;
-        background: var(--bg-color) url('grain-texture.png');
-        background-size: contain
-        background-blend-mode: multiply
-    }
 
-    .landing-container {
-        flex-direction: column;
-        align-items: left;
-        padding: 10px;
-    }
-    
-    .landing-title {
-        font-size: 4rem; /* Reduce size for smaller screens */
-        text-align: left;
-        padding-left: 50;
-        color: var(--accent-color);
-    }
-
-    .vertical-menu {
-        text-align: left;
-        padding: 5;
-    }
-
-    .vertical-menu ul li {
-        margin: 10px 0;
-    }
-
-    .vertical-menu ul li a {
-        font-size: 1.5rem;
-    }
-
-    .landing-image {
-        width: 90%; /* Make image responsive */
-        max-width: 500px;
-        margin-top: 20px;
-    }
-}
 
 
 
