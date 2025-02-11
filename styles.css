@@ -41,6 +41,10 @@ body {
     text-align: left;
     margin-bottom: 20px;
     padding-left: 0%;
+  font-size: clamp(2rem, 7vw, 4rem); /* Scales between 2rem and 4rem */
+  white-space: nowrap; /* Prevents word breaking */
+  text-align: center; /* Ensures it's centered */
+  overflow: hidden; /* Prevents overflow */
 }
 
 /* Horizontal Navigation for About Page */
