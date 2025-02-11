@@ -280,14 +280,6 @@ footer {
     border-top: 2px solid var(--border-color);
 }
 
-/* Fix Animated Texture Flashing */
-body {
-    background-image: url('grain-texture.png'); /* Subtle grain texture */
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-attachment: fixed; /* Prevents movement on scroll */
-}
-
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
     .landing-container {
