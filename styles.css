@@ -160,7 +160,7 @@ header {
     backdrop-filter: blur(4px);
 }
 .content p {
-    margin-bottom: 150px; /* Adjust as needed */
+    margin-bottom: 75px; /* Adjust as needed */
 }
 
 /* Links */
