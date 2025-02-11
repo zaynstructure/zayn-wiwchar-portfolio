@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap');
+/* Import JetBrains Mono for sleek, impactful typography */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap');
 
 /* Custom Color Variables (Based on Your Artwork) */
 :root {
     --bg-color: #1a1a1a; /* Dark near-black */
     --text-color: #f0e3d0; /* Light off-white */
     --accent-color: #5a6c92; /* Muted blue */
-    --link-color: #92a89e; /* Soft desaturated green */
     --hover-color: #d4a7a1; /* Warm pinkish beige */
     --border-color: #3d2b3a; /* Deep muted plum */
 }
@@ -19,10 +19,9 @@
 
 /* Body Styling */
 body {
-    font-family: 'Fira Code', monospace;
+    font-family: 'JetBrains Mono', monospace;
     background-color: var(--bg-color);
     color: var(--text-color);
-    line-height: 1.6;
     padding: 50px;
     background-image: url('grain-texture.png'); /* Subtle grain texture */
     background-blend-mode: multiply;
@@ -30,51 +29,57 @@ body {
     animation: grain 8s steps(10) infinite;
 }
 
-/* Landing Page Title - Twice as Large & Left-Aligned */
+/* Landing Page Title - Very Large & Left-Aligned */
 .landing-title {
-    font-size: 6rem;
+    font-size: 7rem; /* Very big */
     color: var(--accent-color);
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding-left: 10%;
 }
 
-/* Subtitle (Descriptors) */
-.subtitle {
-    font-size: 1.5rem;
+/* Vertical Left-Aligned Menu */
+.vertical-menu ul {
+    list-style: none;
+    padding-left: 10%;
+}
+
+.vertical-menu ul li {
+    margin: 15px 0;
+}
+
+.vertical-menu ul li a {
+    font-size: 2rem;
     color: var(--text-color);
-    opacity: 0.8;
-    text-align: left;
-    padding-left: 10%;
-    margin-bottom: 30px;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Navigation Bar (Fixed & Horizontal) */
-nav {
+.vertical-menu ul li a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+/* Horizontal Navigation for About Page */
+.horizontal-menu {
     background-color: #222;
     padding: 15px 0;
     text-align: center;
     border-bottom: 2px solid var(--accent-color);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
 
-/* Navigation Menu Items */
-nav ul {
+.horizontal-menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
+.horizontal-menu ul li {
     display: inline;
     margin: 0 20px;
 }
 
-nav ul li a {
+.horizontal-menu ul li a {
     color: var(--text-color);
     text-decoration: none;
     font-size: 1.2rem;
@@ -82,13 +87,8 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.horizontal-menu ul li a:hover {
     color: var(--hover-color);
-}
-
-/* Adjust Body Padding to Prevent Overlap with Fixed Nav */
-body {
-    padding-top: 60px;
 }
 
 /* Sections */
@@ -105,7 +105,7 @@ section {
 .menu ul {
     list-style: none;
     padding: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .menu ul li {
