@@ -173,20 +173,26 @@ a {
     text-decoration: none;
     transition: color 0.3s ease;
 }
-.image-container img {
-    position: relative;
-    top: -70px; /* Move it up */
-}
-
-a:hover {
-    text-decoration: underline;
-    color: var(--hover-color);
-}
+/* Image Styling */
 .landing-image {
     width: 60%;
     max-width: 800px;
     display: block;
-    margin: 10px 10% 30px;
+    margin: -40px auto 30px; /* Moves the image up */
+    position: relative;
+}
+
+/* Remove conflicting styles */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hover Effect */
+a:hover {
+    text-decoration: underline;
+    color: var(--hover-color);
 }
 
 /* Footer */
@@ -203,5 +209,4 @@ footer {
     0%, 100% { background-position: 0px 0px; }
     25% { background-position: 10px -10px; }
     50% { background-position: -10px 10px; }
-    75% { background-position: 10px 10px; }
-}
+  
