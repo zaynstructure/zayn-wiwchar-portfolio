@@ -29,6 +29,12 @@ body {
     animation: grain 8s steps(10) infinite;
 }
 
+/* Disable Animated Texture on Mobile but Keep Static Texture */
+@media (max-width: 768px) {
+    body {
+        background-image: url('grain-texture-static.png'); /* Use a non-animated version for mobile */
+    }
+}
 /* Landing Page Title - Very Large & Left-Aligned */
 .landing-title {
     font-size: 7rem; /* Very big */
