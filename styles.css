@@ -32,7 +32,7 @@ body {
 /* Disable Animated Texture on Mobile but Keep Static Texture */
 @media (max-width: 768px) {
     body {
-        background-image: url('grain-texture-static.png'); /* Use a non-animated version for mobile */
+        background-image: url('grain-texture (1).png'); /* Use a non-animated version for mobile */
     }
 }
 /* Landing Page Title - Very Large & Left-Aligned */
