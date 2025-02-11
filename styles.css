@@ -48,7 +48,7 @@ body {
 
 .horizontal-menu ul {
     list-style: none;
-    padding: 5;
+    padding: 0;
     margin: 0;
 }
 
@@ -206,7 +206,7 @@ a {
 
 .vertical-menu ul {
     list-style: none;
-    padding: 0;
+    padding: 5;
 }
 
 .vertical-menu ul li {
@@ -291,7 +291,7 @@ body {
 
     .vertical-menu {
         text-align: left;
-        padding: 0;
+        padding: ;
     }
 
     .vertical-menu ul li {
