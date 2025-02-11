@@ -188,13 +188,67 @@ a {
     text-decoration: underline;
 }
 
+/* Align Image Closer to Menu & Align Tops */
+.landing-container {
+    display: flex;
+    align-items: flex-start; /* Align tops of menu and image */
+    justify-content: flex-start;
+    padding: 0px 5%; /* Adjust padding to bring everything closer */
+}
+
+/* Adjust Vertical Left-Aligned Menu */
+.vertical-menu {
+    flex: 1;
+    list-style: none;
+    padding-left: 0%; /* Bring even closer to image */
+    margin-top: 0; /* Ensure it aligns at the top */
+}
+
+.vertical-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vertical-menu ul li {
+    margin: 10px 0; /* Reduce spacing to bring higher */
+}
+
+.vertical-menu ul li a {
+    font-size: 2rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.vertical-menu ul li a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
 /* Adjust Image to be Closer and Larger, Left-Aligned */
 .landing-image {
-    width: 50%; /* Increase size to max possible without touching the menu */
+    width: 55%; /* Increase size to max possible without touching the menu */
     max-width: 700px;
     display: block;
-    margin-left: 5; /* Align fully to the left */
+    margin-left: 0; /* Align fully to the left */
     position: relative;
+}
+
+/* Responsive Landing Page Title */
+.landing-title {
+    font-size: 7rem; /* Default large size */
+    color: var(--accent-color);
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 10%;
+}
+
+@media (max-width: 768px) {
+    .landing-title {
+        font-size: 4rem; /* Reduce size for smaller screens */
+        text-align: center;
+        padding-left: 0;
+    }
 }
 
 /* Remove conflicting styles */
@@ -219,13 +273,14 @@ footer {
     border-top: 2px solid var(--border-color);
 }
 
-/* Slightly Grainy Background Effect */
-@keyframes grain {
-    0%, 100% { background-position: 0px 0px; }
-    25% { background-position: 10px -10px; }
-    50% { background-position: -10px 10px; }
-    75% { background-position: 10px 10px; }
+/* Fix Animated Texture Flashing */
+body {
+    background-image: url('grain-texture.png'); /* Subtle grain texture */
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed; /* Prevents movement on scroll */
 }
+
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
     .landing-container {
