@@ -42,7 +42,7 @@ body {
 .horizontal-menu {
     background-color: #222;
     padding: 15px 0;
-    text-align: center;
+    text-align: leftr;
     border-bottom: 2px solid var(--accent-color);
 }
 
@@ -54,7 +54,7 @@ body {
 
 .horizontal-menu ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 20px 20px;
 }
 
 .horizontal-menu ul li a {
