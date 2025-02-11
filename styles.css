@@ -178,6 +178,12 @@ a:hover {
     text-decoration: underline;
     color: var(--hover-color);
 }
+.landing-image {
+    width: 60%;
+    max-width: 800px;
+    display: block;
+    margin: 10px 10% 30px;
+}
 
 /* Footer */
 footer {
