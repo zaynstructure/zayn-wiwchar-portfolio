@@ -18,16 +18,27 @@
 }
 
 /* Body Styling */
+
+
+@keyframes grain {
+    0%, 100% { background-position: 0 0; }
+    25% { background-position: 10px -10px; }
+    50% { background-position: -10px 10px; }
+    75% { background-position: 5px 5px; }
+}
+
 body {
     font-family: 'JetBrains Mono', monospace;
     background-color: var(--bg-color);
     color: var(--text-color);
-    padding: 0px;
-    background-image: url('grain-texture.png'); /* Subtle grain texture */
+    padding: 0;
+    background-image: url('grain-texture.png'); /* Ensure this path is correct */
     background-blend-mode: multiply;
     background-size: cover;
-    animation: grain 8s steps(10) infinite;
+    background-repeat: repeat;
+    animation: grain 1s steps(10) infinite;
 }
+
 
 /* Landing Page Title - Very Large & Left-Aligned */
 .landing-title {
