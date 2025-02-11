@@ -151,19 +151,20 @@ a {
     text-decoration: none;
     transition: color 0.3s ease;
 }
-/* Image Styling - Align Right Beside Menu */
+/* Align Image Closer to Menu & Align Tops */
 .landing-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align tops of menu and image */
     justify-content: flex-start;
-    padding: 15px;
+    padding: 20px;
 }
 
-/* Vertical Left-Aligned Menu */
+/* Adjust Vertical Left-Aligned Menu */
 .vertical-menu {
     flex: 1;
     list-style: none;
-    padding-left: 10%;
+    padding-left: 8%; /* Bring closer to image */
+    margin-top: 0; /* Ensure it aligns at the top */
 }
 
 .vertical-menu ul {
@@ -172,7 +173,7 @@ a {
 }
 
 .vertical-menu ul li {
-    margin: 15px 0;
+    margin: 10px 0; /* Reduce spacing to bring higher */
 }
 
 .vertical-menu ul li a {
@@ -187,12 +188,12 @@ a {
     text-decoration: underline;
 }
 
-/* Image Positioned to the Right */
+/* Adjust Image to be Closer to Menu */
 .landing-image {
-    width: 65%; /* Adjust for size preference */
-    max-width: 650px;
+    width: 55%; /* Adjust for size preference */
+    max-width: 500px;
     display: block;
-    margin-top: 10%/* Creates space between menu and image */
+    margin-left: 3%; /* Reduce space between menu and image */
     position: relative;
 }
 
