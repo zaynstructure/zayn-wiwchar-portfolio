@@ -226,3 +226,30 @@ footer {
     50% { background-position: -10px 10px; }
     75% { background-position: 10px 10px; }
 }
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .landing-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .vertical-menu {
+        text-align: center;
+        padding: 0;
+    }
+
+    .vertical-menu ul li {
+        margin: 8px 0;
+    }
+
+    .vertical-menu ul li a {
+        font-size: 1.5rem;
+    }
+
+    .landing-image {
+        width: 90%; /* Make image responsive */
+        max-width: 500px;
+        margin-top: 20px;
+    }
+}
