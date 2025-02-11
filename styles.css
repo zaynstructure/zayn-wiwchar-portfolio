@@ -189,10 +189,10 @@ a {
 
 /* Image Positioned to the Right */
 .landing-image {
-    width: 50%; /* Adjust for size preference */
-    max-width: 600px;
+    width: 55%; /* Adjust for size preference */
+    max-width: 650px;
     display: block;
-    margin-left: 5%;
+    margin-left: 2%;
     margin-top: 10%/* Creates space between menu and image */
     position: relative;
 }
