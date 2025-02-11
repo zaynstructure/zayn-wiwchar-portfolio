@@ -282,7 +282,7 @@ footer {
         min-height: 100vh;
         background: var(--bg-color) url('grain-texture.png') repeat !important;
         background-size: cover !important;
-        background-blend-mode: normal !important; /* Ensure blend mode does not interfere */
+        background-blend-mode: multiply
     }
 
     .landing-container {
