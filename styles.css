@@ -281,7 +281,7 @@ footer {
     html, body {
         min-height: 100vh;
         background: var(--bg-color) url('grain-texture.png');
-        background-size: cover !important;
+        background-size: contain
         background-blend-mode: multiply
     }
 
