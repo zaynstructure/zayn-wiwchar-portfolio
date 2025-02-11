@@ -280,7 +280,7 @@ footer {
 @media (max-width: 768px) {
     html, body {
         min-height: 100vh;
-        background: var(--bg-color) url('grain-texture.png') repeat !important;
+        background: var(--bg-color) url('grain-texture.png');
         background-size: cover !important;
         background-blend-mode: multiply
     }
