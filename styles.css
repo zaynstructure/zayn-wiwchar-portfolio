@@ -36,7 +36,7 @@ body {
     background-blend-mode: multiply;
     background-size: cover;
     background-repeat: repeat;
-    animation: grain 1s steps(10) infinite;
+    animation: grain 4s steps(10) infinite;
 }
 
 
