@@ -192,7 +192,8 @@ a {
     width: 50%; /* Adjust for size preference */
     max-width: 600px;
     display: block;
-    margin-left: 5%; /* Creates space between menu and image */
+    margin-left: 5%;
+    margin-top: 10%/* Creates space between menu and image */
     position: relative;
 }
 
