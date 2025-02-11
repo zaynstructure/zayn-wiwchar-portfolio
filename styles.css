@@ -53,7 +53,7 @@ body {
 }
 
 .horizontal-menu ul li {
-    display: block;
+    display: inline;
     margin: 20px 20px;
 }
 
