@@ -9,14 +9,6 @@
     --hover-color: #d4a7a1; /* Warm pinkish beige */
     --border-color: #3d2b3a; /* Deep muted plum */
 }
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap');
-
-:root {
-    --bg-color: #1a1a1a;
-    --text-color: #f0e3d0;
-    --accent-color: #5a6c92;
-    --hover-color: #d4a7a1;
-}
 
 /* Global Reset */
 * {
@@ -30,14 +22,17 @@ body {
     font-family: 'Fira Code', monospace;
     background-color: var(--bg-color);
     color: var(--text-color);
+    line-height: 1.6;
     padding: 50px;
-    background-image: url('grain-texture.png');
+    background-image: url('grain-texture.png'); /* Subtle grain texture */
+    background-blend-mode: multiply;
     background-size: cover;
+    animation: grain 8s steps(10) infinite;
 }
 
-/* Landing Title - Twice as Large & Left-Aligned */
+/* Landing Page Title - Twice as Large & Left-Aligned */
 .landing-title {
-    font-size: 6rem; /* Twice as large */
+    font-size: 6rem;
     color: var(--accent-color);
     text-align: left;
     margin-bottom: 10px;
@@ -52,6 +47,58 @@ body {
     text-align: left;
     padding-left: 10%;
     margin-bottom: 30px;
+}
+
+/* Navigation Bar (Fixed & Horizontal) */
+nav {
+    background-color: #222;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Navigation Menu Items */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* Adjust Body Padding to Prevent Overlap with Fixed Nav */
+body {
+    padding-top: 60px;
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-left: 2px solid var(--accent-color);
+    background: rgba(26, 26, 26, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(3px);
 }
 
 /* Menu Styling */
@@ -82,7 +129,7 @@ body {
 
 /* Image Styling for Menu */
 .menu ul li img {
-    width: 80px; /* Adjust based on actual image size */
+    width: 80px;
     height: auto;
     margin-left: 15px;
     opacity: 0.7;
@@ -94,33 +141,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Footer */
-footer {
-    margin-top: 50px;
-    color: var(--accent-color);
-    font-size: 0.8rem;
-    text-align: center;
-}
-
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* General Styling */
-body {
-    font-family: 'Fira Code', monospace;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    padding: 20px;
-    background-image: url('grain-texture.png'); /* Add a subtle grain texture */
-    background-blend-mode: multiply;
-    background-size: cover;
-}
-
 /* Header */
 header {
     text-align: center;
@@ -130,34 +150,14 @@ header {
     border-bottom: 2px solid var(--border-color);
 }
 
-/* Navigation */
-nav {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-nav a {
-    color: var(--link-color);
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0 10px;
-    padding: 5px;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: var(--hover-color);
-    text-decoration: underline;
-}
-
-/* Sections */
-section {
+/* About Page Styling */
+.content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     border-left: 2px solid var(--accent-color);
-    background: rgba(26, 26, 26, 0.8); /* Semi-transparent background */
-    backdrop-filter: blur(3px);
+    background: rgba(26, 26, 26, 0.85);
+    backdrop-filter: blur(4px);
 }
 
 /* Links */
@@ -174,9 +174,10 @@ a:hover {
 
 /* Footer */
 footer {
+    margin-top: 50px;
     text-align: center;
-    padding: 10px;
     color: var(--accent-color);
+    font-size: 0.8rem;
     border-top: 2px solid var(--border-color);
 }
 
@@ -186,136 +187,4 @@ footer {
     25% { background-position: 10px -10px; }
     50% { background-position: -10px 10px; }
     75% { background-position: 10px 10px; }
-}
-
-body {
-    background-image: url('grain-texture.png'); /* You can replace with a subtle grain texture */
-    background-size: 300px 300px;
-    animation: grain 8s steps(10) infinite;
-}
-body {
-    background-color: #1a1a1a; /* Dark background */
-    background-image: url('grain-texture.png'); /* Use uploaded texture */
-    background-blend-mode: multiply;
-    background-size: cover;
-    animation: grain 8s steps(10) infinite;
-}
-
-/* Slightly animated grain effect */
-@keyframes grain {
-    0%, 100% { background-position: 0px 0px; }
-    25% { background-position: 10px -10px; }
-    50% { background-position: -10px 10px; }
-    75% { background-position: 10px 10px; }
-}
-
-/* About Page Styling */
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    border-left: 2px solid var(--accent-color);
-    background: rgba(26, 26, 26, 0.85); /* Semi-transparent background */
-    backdrop-filter: blur(4px);
-}
-
-/* Header */
-.title {
-    font-size: 2.5rem;
-    color: var(--accent-color);
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Text */
-p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-/* List Styling */
-ul {
-    list-style: square;
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-}
-
-/* Footer */
-footer {
-    margin-top: 50px;
-    text-align: center;
-    color: var(--accent-color);
-    font-size: 0.8rem;
-}
-
-/* Navigation Bar (Fixed at Top & Horizontal) */
-nav {
-    background-color: #222;
-    padding: 15px 0;
-    text-align: center;
-    border-bottom: 2px solid var(--accent-color);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-/* Navigation Menu Items */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline; /* Makes the items appear horizontally */
-    margin: 0 20px; /* Adds spacing between items */
-}
-
-nav ul li a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: var(--hover-color);
-}
-
-/* Adjust Body Padding to Prevent Overlap with Fixed Nav */
-body {
-    padding-top: 60px; /* Pushes content down so it doesn’t overlap with the fixed nav */
-}
-
-/* About Page Styling */
-.content {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border-left: 2px solid var(--accent-color);
-    background: rgba(26, 26, 26, 0.85);
-    backdrop-filter: blur(4px);
-}
-
-/* Header */
-.title {
-    font-size: 2.5rem;
-    color: var(--accent-color);
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Footer */
-footer {
-    margin-top: 50px;
-    text-align: center;
-    color: var(--accent-color);
-    font-size: 0.8rem;
 }
