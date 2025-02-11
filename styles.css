@@ -287,7 +287,6 @@ footer {
     padding: 0px;
         background-image: url('grain-texture.png'); /* Use a non-animated version for mobile */
         background-repeat: repeat;
-       background-blend-mode: multiply;
         background-size: cover; }
 
     
@@ -322,14 +321,8 @@ footer {
         margin-top: 20px;
     }
     
+}
 
-}
-@media (max-width: 768px) {
-    body {
-        background-color: red !important; /* Force background color for testing */
-        background-image: url('grain-texture.png') !important; /* Ensure correct path */
-        background-repeat: repeat !important;
-        background-size: cover !important;
-    }
-}
+
+
 
