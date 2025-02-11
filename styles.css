@@ -41,8 +41,8 @@ body {
 /* Horizontal Navigation for About Page */
 .horizontal-menu {
     background-color: #222;
-    padding: 15px 0;
-    text-align: leftr;
+    padding: 50px 0;
+    text-align: left;
     border-bottom: 2px solid var(--accent-color);
 }
 
