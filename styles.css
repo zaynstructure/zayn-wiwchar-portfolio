@@ -101,3 +101,18 @@ body {
     background-size: 300px 300px;
     animation: grain 8s steps(10) infinite;
 }
+body {
+    background-color: #1a1a1a; /* Dark background */
+    background-image: url('grain-texture.png'); /* Use uploaded texture */
+    background-blend-mode: multiply;
+    background-size: cover;
+    animation: grain 8s steps(10) infinite;
+}
+
+/* Slightly animated grain effect */
+@keyframes grain {
+    0%, 100% { background-position: 0px 0px; }
+    25% { background-position: 10px -10px; }
+    50% { background-position: -10px 10px; }
+    75% { background-position: 10px 10px; }
+}
