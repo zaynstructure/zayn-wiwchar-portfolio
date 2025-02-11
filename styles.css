@@ -178,7 +178,7 @@ a {
     width: 60%;
     max-width: 800px;
     display: block;
-    margin: -40px auto 30px; /* Moves the image up */
+    margin: -80px auto 30px; /* Moves the image up */
     position: relative;
 }
 
