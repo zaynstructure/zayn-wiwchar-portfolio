@@ -1,93 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap');
 
-body {
-    font-family: 'Fira Code', monospace !important;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
+/* Custom Color Variables (Based on Your Artwork) */
+:root {
+    --bg-color: #1a1a1a; /* Dark near-black */
+    --text-color: #f0e3d0; /* Light off-white */
+    --accent-color: #5a6c92; /* Muted blue */
+    --link-color: #92a89e; /* Soft desaturated green */
+    --hover-color: #d4a7a1; /* Warm pinkish beige */
+    --border-color: #3d2b3a; /* Deep muted plum */
 }
 
-/* Apply Fira Code to all text */
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
 body {
     font-family: 'Fira Code', monospace;
-    background-color: #1a1a1a; /* Dark theme */
-    color: #ffffff; /* Light text */
-    margin: 0;
-    padding: 0;
-}
-
-/* Header Styling */
-header {
-    background-color: #333;
-    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
     padding: 20px;
+    background-image: url('grain-texture.png'); /* Add a subtle grain texture */
+    background-blend-mode: multiply;
+    background-size: cover;
 }
 
-header h1 {
-    font-size: 2em;
-    margin: 0;
-}
-
-/* Navigation Bar */
-nav {
-    background-color: #444;
-    padding: 10px;
+/* Header */
+header {
     text-align: center;
+    font-size: 24px;
+    padding: 20px 0;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--border-color);
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+/* Navigation */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ffffff;
+nav a {
+    color: var(--link-color);
     text-decoration: none;
-    font-weight: bold;
-    font-family: 'Fira Code', monospace;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
 }
 
 /* Sections */
 section {
-    padding: 40px;
     max-width: 800px;
-    margin: auto;
-}
-
-/* Styling for Project Blocks */
-.project {
-    background-color: #222;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-/* Contact Section */
-#contact {
-    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-left: 2px solid var(--accent-color);
+    background: rgba(26, 26, 26, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(3px);
 }
 
 /* Links */
 a {
-    color: #ffcc00; /* Gold accent */
+    color: var(--link-color);
     text-decoration: none;
-    font-family: 'Fira Code', monospace;
+    transition: color 0.3s ease;
 }
 
 a:hover {
     text-decoration: underline;
+    color: var(--hover-color);
 }
 
 /* Footer */
 footer {
-    background-color: #333;
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
+    color: var(--accent-color);
+    border-top: 2px solid var(--border-color);
+}
+
+/* Slightly Grainy Background Effect */
+@keyframes grain {
+    0%, 100% { background-position: 0px 0px; }
+    25% { background-position: 10px -10px; }
+    50% { background-position: -10px 10px; }
+    75% { background-position: 10px 10px; }
+}
+
+body {
+    background-image: url('grain-texture.png'); /* You can replace with a subtle grain texture */
+    background-size: 300px 300px;
+    animation: grain 8s steps(10) infinite;
 }
