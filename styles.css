@@ -28,7 +28,7 @@
 body {
     @font-face {
     font-family: 'JetBrains Mono NL';
-    src: url('fonts/JetBrainsMonoNL-Thin.ttf') format('truetype');
+    src: url('Fonts/JetBrainsMonoNL-Thin.ttf') format('truetype');
     font-weight: 100; /* Thin */
     font-style: normal;
 }
