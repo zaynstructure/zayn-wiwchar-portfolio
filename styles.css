@@ -156,14 +156,14 @@ a {
     display: flex;
     align-items: flex-start; /* Align tops of menu and image */
     justify-content: flex-start;
-    padding: 0px 5%;
+    padding: 0px 5%; /* Adjust padding to bring everything closer */
 }
 
 /* Adjust Vertical Left-Aligned Menu */
 .vertical-menu {
     flex: 1;
     list-style: none;
-    padding-left: 0%; /* Bring closer to image */
+    padding-left: 0%; /* Bring even closer to image */
     margin-top: 0; /* Ensure it aligns at the top */
 }
 
@@ -188,9 +188,9 @@ a {
     text-decoration: underline;
 }
 
-/* Adjust Image to be Closer to Menu */
+/* Adjust Image to be Closer and Larger */
 .landing-image {
-    width: 60%; /* Adjust for size preference */
+    width: 60%; /* Increase size */
     max-width: 600px;
     display: block;
     margin-left: 3%; /* Reduce space between menu and image */
@@ -226,4 +226,3 @@ footer {
     50% { background-position: -10px 10px; }
     75% { background-position: 10px 10px; }
 }
-
