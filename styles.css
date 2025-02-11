@@ -285,7 +285,8 @@ footer {
     background-color: var(--bg-color);
     color: var(--text-color);
     padding: 0px;
-        background-image: url('grain-texture (1).png'); /* Use a non-animated version for mobile */
+        background-image: url('grain-texture.png'); /* Use a non-animated version for mobile */
+        background-repeat: repeat;
        background-blend-mode: multiply;
         background-size: cover; }
 
