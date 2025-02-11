@@ -175,7 +175,7 @@ a {
 }
 .image-container img {
     position: relative;
-    top: -20px; /* Move it up */
+    top: -70px; /* Move it up */
 }
 
 a:hover {
