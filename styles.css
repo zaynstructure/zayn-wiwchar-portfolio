@@ -159,6 +159,9 @@ header {
     background: rgba(26, 26, 26, 0.85);
     backdrop-filter: blur(4px);
 }
+.content p {
+    margin-bottom: 25px; /* Adjust as needed */
+}
 
 /* Links */
 a {
