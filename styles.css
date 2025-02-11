@@ -32,11 +32,6 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     padding: 0;
-    background-image: url('grain-texture.png'); /* Ensure this path is correct */
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-repeat: repeat;
-    animation: grain 4s steps(10) infinite;
 }
 
 /* Landing Page Title - Very Large & Left-Aligned */
