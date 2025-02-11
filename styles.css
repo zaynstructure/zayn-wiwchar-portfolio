@@ -28,8 +28,15 @@
 }
 
 body {
-    font-family: 'JetBrains Mono', monospace;
-    font-weight:200
+    @font-face {
+    font-family: 'JetBrains Mono NL';
+    src: url('fonts/JetBrainsMonoNL-Thin.ttf') format('truetype');
+    font-weight: 100; /* Thin */
+    font-style: normal;
+}
+
+body {
+    font-family: 'JetBrains Mono NL', monospace;
     background-color: var(--bg-color);
     color: var(--text-color);
     padding: 0;
