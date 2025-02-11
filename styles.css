@@ -254,6 +254,7 @@ a {
         font-size: 4rem; /* Reduce size for smaller screens */
         text-align: left;
         padding-left: 0;
+        color: var(--accent-color);
     }
 }
 
@@ -294,7 +295,12 @@ body {
         align-items: center;
         padding: 20px;
     }
-
+ .landing-title {
+        font-size: 4rem; /* Reduce size for smaller screens */
+        text-align: left;
+        padding-left: 0;
+        color: var(--accent-color);
+    }
     .vertical-menu {
         text-align: left;
         padding: ;
