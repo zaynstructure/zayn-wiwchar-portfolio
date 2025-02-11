@@ -1,7 +1,84 @@
-body { font-family: 'Fira Code', sans-serif; margin: 0; padding: 0; background-color: #1a1a1a; color: #ffffff; } 
-header { background-color: #333; text-align: center; padding: 20px; } 
-nav { background-color: #444; padding: 10px; text-align: center; } 
-nav ul { list-style-type: none; padding: 0; } nav ul li { display: inline; margin: 0 15px; }
-nav ul li a { color: #ffffff; text-decoration: none; } section { padding: 40px; max-width: 800px; margin: auto; } 
-.project { background-color: #222; padding: 15px; margin-bottom: 20px; border-radius: 5px; } 
-footer { background-color: #333; text-align: center; padding: 10px; margin-top: 20px; }
+
+/* Apply Fira Code to all text */
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #1a1a1a; /* Dark theme */
+    color: #ffffff; /* Light text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Fira Code', monospace;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Styling for Project Blocks */
+.project {
+    background-color: #222;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #ffcc00; /* Gold accent */
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
