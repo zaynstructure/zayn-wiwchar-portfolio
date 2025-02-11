@@ -42,7 +42,7 @@ body {
 .horizontal-menu {
     background-color: #222;
     padding: 15px 0;
-    text-align: leftr;
+    text-align: center;
     border-bottom: 2px solid var(--accent-color);
 }
 
