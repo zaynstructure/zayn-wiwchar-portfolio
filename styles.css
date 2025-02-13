@@ -185,12 +185,15 @@ a {
 /* Ensure menu doesn't take up too much space */
 .vertical-menu {
     flex: 0.3; /* Takes up 30% of container width */
+    margin-top: 0; /* Ensure no extra margin */
+    padding-top: 0; /* Ensure no extra padding */
 }
 
 /* Ensure text has enough space */
 .landing-text {
     flex: 0.7; /* Takes up 70% of container width */
     max-width: 700px; /* Limit max width for readability */
+    margin-top: 0; 
 }
 
 /* Optional: Make sure text wraps properly */
@@ -310,6 +313,37 @@ a:hover {
     text-decoration: underline;
     color: var(--hover-color);
 }
+
+@media screen and (max-width: 768px) {
+    .landing-container {
+        flex-direction: column; /* Stack menu and text vertically */
+        align-items: center;
+        gap: 15px; /* Reduce spacing */
+    }
+
+    /* Scale down menu */
+    .vertical-menu {
+        flex: none;
+        font-size: 1rem; /* Reduce font size */
+    }
+
+    .vertical-menu ul li {
+        margin: 10px 0; /* Reduce spacing between items */
+    }
+
+    .vertical-menu ul li a {
+        font-size: 1.2rem; /* Make links smaller */
+    }
+
+    /* Scale down text */
+    .landing-text {
+        flex: none;
+        max-width: 90%; /* Make text more readable on small screens */
+        font-size: 1rem; /* Reduce font size */
+        text-align: center;
+    }
+}
+
 
 /* Footer */
 footer {
