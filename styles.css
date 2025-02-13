@@ -8,6 +8,12 @@
     --hover-color: #d4a7a1; /* Warm pinkish beige */
     --border-color: #3d2b3a; /* Deep muted plum */
 }
+.homepage-titleimage {
+    max-width: 100%;  /* Ensures it doesn’t exceed the container width */
+    height: auto;     /* Maintains aspect ratio */
+    display: block;   /* Removes any extra spacing around the image */
+    margin: 0 auto;   /* Centers the image */
+}
 
 /* Global Reset */
 * {
