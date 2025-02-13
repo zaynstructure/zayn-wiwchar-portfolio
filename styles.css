@@ -145,6 +145,7 @@ header {
     padding: 20px 0;
     color: var(--accent-color);
     border-bottom: 2px solid var(--border-color);
+    margin-bottom: 10px
 }
 
 /* About Page Styling */
