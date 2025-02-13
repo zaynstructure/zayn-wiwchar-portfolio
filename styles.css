@@ -177,6 +177,14 @@ a {
     justify-content: flex-start;
     padding: 0px 5%; /* Adjust padding to bring everything closer */
 }
+.landing-container2 {
+    display: flex;
+    align-items: flex-start; /* Align tops of menu and image */
+    justify-content: right;
+    padding: 0px 5%; /* Adjust padding to bring everything closer */
+    margin-right: 15px 0;
+}
+
 
 /* Adjust Vertical Left-Aligned Menu */
 .vertical-menu {
