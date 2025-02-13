@@ -15,7 +15,7 @@
     margin: 0 auto;   /* Centers the image */
 }
 .container {
-    max-width: 1200px;  /* Adjust to your preference (common values: 1000px–1400px) */
+    max-width: 2000px;  /* Adjust to your preference (common values: 1000px–1400px) */
     width: 90%;         /* Ensures it scales on smaller screens */
     margin: 0 auto;     /* Centers the content */
 }
