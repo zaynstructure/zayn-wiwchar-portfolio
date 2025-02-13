@@ -318,7 +318,7 @@ a:hover {
 @media screen and (max-width: 768px) {
     .landing-container {
         flex-direction: column; /* Stack menu and text vertically */
-        align-items: center;
+        align-items: left;
         gap: 15px; /* Reduce spacing */
     }
 
@@ -341,7 +341,7 @@ a:hover {
         flex: none;
         max-width: 90%; /* Make text more readable on small screens */
         font-size: 1rem; /* Reduce font size */
-        text-align: center;
+        text-align: right;
     }
 }
 
