@@ -14,6 +14,9 @@
     display: block;   /* Removes any extra spacing around the image */
     margin: 0 auto;   /* Centers the image */
 }
+.flipped-horizontal {
+    transform: scaleX(-1);
+}
 .container {
     max-width: 2000px;  /* Adjust to your preference (common values: 1000px–1400px) */
     width: 90%;         /* Ensures it scales on smaller screens */
