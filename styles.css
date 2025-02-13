@@ -9,7 +9,7 @@
     --border-color: #3d2b3a; /* Deep muted plum */
 }
 .homepage-titleimage {
-    max-width: 50%;  /* Ensures it doesn’t exceed the container width */
+    max-width: 90%;  /* Ensures it doesn’t exceed the container width */
     height: auto;     /* Maintains aspect ratio */
     display: block;   /* Removes any extra spacing around the image */
     margin: 0 auto;   /* Centers the image */
