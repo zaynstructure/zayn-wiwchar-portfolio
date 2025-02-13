@@ -171,19 +171,34 @@ a {
     transition: color 0.3s ease;
 }
 /* Align Image Closer to Menu & Align Tops */
+
 .landing-container {
-    display: flex;
-    align-items: flex-start; /* Align tops of menu and image */
+    display: flex;       /* Make items sit side by side */
+    align-items: flex-start; /* Align them at the top */
     justify-content: flex-start;
-    padding: 0px 5%; /* Adjust padding to bring everything closer */
+    padding: 20px;
+    gap: 30px;          /* Space between menu and text */
+    max-width: 1200px;  /* Optional: Prevents it from stretching too wide */
+    margin: 0 auto;     /* Centers the whole section */
 }
-.landing-container2 {
-    display: flex;
-    align-items: flex-start; /* Align tops of menu and image */
-    justify-content: right;
-    padding: 0px 5%; /* Adjust padding to bring everything closer */
-    margin-right: 15px 0;
+
+/* Ensure menu doesn't take up too much space */
+.vertical-menu {
+    flex: 0.3; /* Takes up 30% of container width */
 }
+
+/* Ensure text has enough space */
+.landing-text {
+    flex: 0.7; /* Takes up 70% of container width */
+    max-width: 700px; /* Limit max width for readability */
+}
+
+/* Optional: Make sure text wraps properly */
+.landing-text p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
 
 
 /* Adjust Vertical Left-Aligned Menu */
@@ -225,7 +240,7 @@ a {
 
 /* Adjust Vertical Left-Aligned Menu */
 .vertical-menu {
-    flex: 1;
+    flex: 0.3;
     list-style: none;
     padding-left: 0%; /* Bring even closer to image */
     margin-top: 0; /* Ensure it aligns at the top */
@@ -250,6 +265,18 @@ a {
 .vertical-menu ul li a:hover {
     color: var(--hover-color);
     text-decoration: underline;
+}
+
+/* Ensure text has enough space */
+.landing-text {
+    flex: 0.7; /* Takes up 70% of container width */
+    max-width: 700px; /* Limit max width for readability */
+}
+
+/* Optional: Make sure text wraps properly */
+.landing-text p {
+    line-height: 1.6;
+    font-size: 1.2rem;
 }
 
 /* Adjust Image to be Closer and Larger, Left-Aligned */
