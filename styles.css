@@ -14,7 +14,11 @@
     display: block;   /* Removes any extra spacing around the image */
     margin: 0 auto;   /* Centers the image */
 }
-
+.container {
+    max-width: 1200px;  /* Adjust to your preference (common values: 1000px–1400px) */
+    width: 90%;         /* Ensures it scales on smaller screens */
+    margin: 0 auto;     /* Centers the content */
+}
 /* Global Reset */
 * {
     margin: 0;
