@@ -366,6 +366,73 @@ footer {
 
 
 
+*Contact Page Styles*
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #1a1a1a;
+    color: #f0e3d0;
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-left: 2px solid #5a6c92;
+    background: rgba(26, 26, 26, 0.85);
+    backdrop-filter: blur(4px);
+}
+
+h1 {
+    color: #5a6c92;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #222;
+    color: #f0e3d0;
+    border-bottom: 2px solid #5a6c92;
+}
+
+button {
+    background: #5a6c92;
+    color: #f0e3d0;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d4a7a1;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #5a6c92;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
 
 
 
