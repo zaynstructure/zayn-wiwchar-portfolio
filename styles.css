@@ -325,7 +325,6 @@ button:hover {
     display: flex;
     align-items: center;
     background: rgba(26, 26, 26, 0.85);
-    border-left: 3px solid var(--accent-color);
     padding: 20px;
     margin-bottom: 30px;
     gap: 20px;
