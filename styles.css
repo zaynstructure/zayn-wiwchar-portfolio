@@ -289,4 +289,95 @@ button:hover {
    background: rgba(0, 0, 0, 0) !important;
 }
 
+/* Music */ 
+#intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#intro h1 {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+#past-projects {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+#past-projects h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+}
+
+/* Music Project Container */
+.music-project {
+    display: flex;
+    align-items: center;
+    background: rgba(26, 26, 26, 0.85);
+    border-left: 3px solid var(--accent-color);
+    padding: 20px;
+    margin-bottom: 30px;
+    gap: 20px;
+    border-radius: 8px;
+}
+
+/* Music Project Image */
+.music-project img {
+    width: 180px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Music Project Info */
+.music-info {
+    flex: 1;
+}
+
+/* Title & Description */
+.music-info h2 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.music-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Embedded Players */
+iframe {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .music-project {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .music-project img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .music-info h2 {
+        font-size: 1.5rem;
+    }
+}
 
