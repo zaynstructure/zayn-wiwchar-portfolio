@@ -291,12 +291,12 @@ button:hover {
 
 /* Music */ 
 #intro {
-    text-align: center;
+    text-align: left;
     padding: 40px 20px;
 }
 
 #intro h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--accent-color);
     margin-bottom: 10px;
 }
@@ -314,7 +314,7 @@ button:hover {
 }
 
 #past-projects h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     color: var(--accent-color);
     margin-bottom: 30px;
