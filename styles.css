@@ -159,7 +159,7 @@ h1, h2, h3 {
 }
 
 .vertical-menu ul li img {
-    width: 50px; /* Adjust size as needed */
+    width: 80px; /* Adjust size as needed */
     height: auto;
     filter: brightness(0.9); /* Optional: slightly darkens the icon for consistency */
 }
