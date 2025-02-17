@@ -151,6 +151,33 @@ h1, h2, h3 {
 }
 
 /* Vertical Menu */
+.vertical-menu ul li {
+    display: flex;
+    align-items: center; /* Align text and icon */
+    gap: 10px; /* Space between icon and text */
+    margin-bottom: 15px;
+}
+
+.vertical-menu ul li img {
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+    filter: brightness(0.9); /* Optional: slightly darkens the icon for consistency */
+}
+
+.vertical-menu ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.vertical-menu ul li a:hover {
+    color: var(--hover-color);
+}
+
+
 .vertical-menu {
     flex: 0.3;
     list-style: none;
