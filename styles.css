@@ -176,7 +176,7 @@ h1, h2, h3 {
 }
 
 .vertical-menu ul li img {
-    width: 40px; /* Adjust icon size */
+    width: 80px; /* Adjust icon size */
     height: auto;
     margin-bottom: 5px; /* Space between image and text */
 }
