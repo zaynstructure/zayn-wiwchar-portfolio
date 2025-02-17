@@ -151,26 +151,38 @@ h1, h2, h3 {
 }
 
 /* Vertical Menu */
-.vertical-menu ul li {
-    display: flex;
-    align-items: center; /* Align text and icon */
-    gap: 10px; /* Space between icon and text */
-    margin-bottom: 15px;
+.vertical-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center content */
 }
 
-.vertical-menu ul li img {
-    width: 80px; /* Adjust size as needed */
-    height: auto;
-    filter: brightness(0.9); /* Optional: slightly darkens the icon for consistency */
+.vertical-menu ul li {
+    display: flex;
+    flex-direction: column; /* Stack image above text */
+    align-items: center; /* Center align */
+    gap: 5px; /* Space between icon and text */
+    margin-bottom: 15px; /* Spacing between items */
 }
 
 .vertical-menu ul li a {
     display: flex;
+    flex-direction: column; /* Stack items */
     align-items: center;
+    text-decoration: none;
     font-size: 1.5rem;
     color: var(--text-color);
-    text-decoration: none;
     transition: color 0.3s ease;
+}
+
+.vertical-menu ul li img {
+    width: 40px; /* Adjust icon size */
+    height: auto;
+    margin-bottom: 5px; /* Space between image and text */
+}
+
+.vertical-menu ul li a:hover {
+    color: var(--hover-color);
 }
 
 .vertical-menu ul li a:hover {
