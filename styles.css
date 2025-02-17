@@ -429,7 +429,7 @@ iframe {
     }
 
     .vertical-menu ul li {
-        margin-bottom: 0; /* Remove bottom spacing */
+        margin-bottom: 10; /* Remove bottom spacing */
     }
 
     .vertical-menu ul li a {
@@ -438,7 +438,7 @@ iframe {
     }
 
     .vertical-menu ul li img {
-        width: 30px; /* Adjust icon size */
+        width: 60px; /* Adjust icon size */
     }
 }
 
