@@ -419,3 +419,26 @@ iframe {
     }
 }
 
+/* 📱 Mobile: Horizontal Menu */
+@media (max-width: 768px) {
+    .vertical-menu ul {
+        display: flex;
+        flex-direction: row; /* Switch to horizontal */
+        justify-content: center; /* Center items */
+        gap: 20px; /* Space between menu items */
+    }
+
+    .vertical-menu ul li {
+        margin-bottom: 0; /* Remove bottom spacing */
+    }
+
+    .vertical-menu ul li a {
+        flex-direction: column; /* Keep icons above text */
+        font-size: 1rem; /* Reduce text size */
+    }
+
+    .vertical-menu ul li img {
+        width: 30px; /* Adjust icon size */
+    }
+}
+
