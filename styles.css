@@ -62,7 +62,7 @@ body {
 /* Horizontal Navigation */
 .horizontal-menu {
     background-color: #222;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
     border-bottom: 2px solid var(--accent-color);
 }
@@ -223,7 +223,7 @@ h1, h2, h3 {
     flex: 0.7;
     max-width: 700px;
     line-height: 1.6;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /* Adjust Image */
