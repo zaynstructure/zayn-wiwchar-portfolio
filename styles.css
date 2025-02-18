@@ -95,7 +95,7 @@ section {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    border-left: 2px solid var(--accent-color);
+    border-left: 0px var(--accent-color);
     background: rgba(26, 26, 26, 0.8);
     backdrop-filter: blur(3px);
 }
@@ -273,7 +273,7 @@ footer {
     max-width: 600px;
     margin: auto;
     padding: 20px;
-    border-left: 2px solid var(--accent-color);
+    border-left: 0px solid var(--accent-color);
     background: rgba(26, 26, 26, 0.85);
     backdrop-filter: blur(4px);
 }
@@ -341,7 +341,7 @@ button:hover {
 }
 
 #intro p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     max-width: 700px;
     margin: auto;
 }
@@ -415,7 +415,7 @@ iframe {
     }
 
     .music-info h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
