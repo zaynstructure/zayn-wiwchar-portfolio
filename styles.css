@@ -57,6 +57,7 @@ body {
     margin-bottom: 20px;
     white-space: nowrap;
     overflow: hidden;
+    padding-left: 30px;
 }
 
 /* Horizontal Navigation */
@@ -64,7 +65,7 @@ body {
     background-color: #222;
     padding: 15px 0;
     text-align: center;
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: none;
 }
 
 .horizontal-menu ul {
@@ -95,7 +96,6 @@ section {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    border-left: 0px var(--accent-color);
     background: rgba(26, 26, 26, 0.8);
     backdrop-filter: blur(3px);
 }
@@ -120,7 +120,7 @@ header {
     font-size: 48px;
     padding: 20px 0;
     color: var(--accent-color);
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: none;
     margin-bottom: 15px;
 }
 
@@ -129,7 +129,6 @@ header {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    border-left: 2px solid var(--accent-color);
     background: rgba(26, 26, 26, 0.85);
     backdrop-filter: blur(4px);
 }
@@ -154,20 +153,20 @@ h1, h2, h3 {
 .vertical-menu ul {
     list-style: none;
     padding: 0;
-    text-align: center; /* Center content */
+    text-align: center;
 }
 
 .vertical-menu ul li {
     display: flex;
-    flex-direction: column; /* Stack image above text */
-    align-items: center; /* Center align */
-    gap: 5px; /* Space between icon and text */
-    margin-bottom: 15px; /* Spacing between items */
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
 }
 
 .vertical-menu ul li a {
     display: flex;
-    flex-direction: column; /* Stack items */
+    flex-direction: column;
     align-items: center;
     text-decoration: none;
     font-size: 1.5rem;
@@ -175,64 +174,8 @@ h1, h2, h3 {
     transition: color 0.3s ease;
 }
 
-.vertical-menu ul li img {
-    width: 80px; /* Adjust icon size */
-    height: auto;
-    margin-bottom: 5px; /* Space between image and text */
-}
-
 .vertical-menu ul li a:hover {
     color: var(--hover-color);
-}
-
-.vertical-menu ul li a:hover {
-    color: var(--hover-color);
-}
-
-
-.vertical-menu {
-    flex: 0.3;
-    list-style: none;
-    margin-top: 0;
-    padding-left: 0;
-}
-
-.vertical-menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.vertical-menu ul li {
-    margin: 15px 0;
-}
-
-.vertical-menu ul li a {
-    font-size: 2rem;
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.vertical-menu ul li a:hover {
-    color: var(--hover-color);
-    text-decoration: underline;
-}
-
-/* Landing Text */
-.landing-text {
-    flex: 0.7;
-    max-width: 700px;
-    line-height: 1.6;
-    font-size: 1.1rem;
-}
-
-/* Adjust Image */
-.landing-image {
-    width: 55%;
-    max-width: 700px;
-    display: block;
-    margin-left: 0;
-    position: relative;
 }
 
 /* Responsive Adjustments */
@@ -265,180 +208,5 @@ footer {
     text-align: center;
     color: var(--accent-color);
     font-size: 0.8rem;
-    border-top: 2px solid var(--border-color);
+    border-top: none;
 }
-
-/* 📌 CONTACT PAGE STYLES */
-.contact-container {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    border-left: 0px solid var(--accent-color);
-    background: rgba(26, 26, 26, 0.85);
-    backdrop-filter: blur(4px);
-}
-
-h1 {
-    color: var(--accent-color);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background: #222;
-    color: var(--text-color);
-    border-bottom: 2px solid var(--accent-color);
-}
-
-button {
-    background: var(--accent-color);
-    color: var(--text-color);
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background: var(--hover-color);
-}
-
-.contact-info {
-    margin-top: 20px;
-}
-
-.social-links a {
-    color: var(--accent-color);
-    text-decoration: none;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    gap: 10px;
-}
-
-.social-links img {
-    width: 24px;
-    height: 24px;
-   background: rgba(0, 0, 0, 0) !important;
-}
-
-/* Music */ 
-#intro {
-    text-align: left;
-    padding: 40px 20px;
-}
-
-#intro h1 {
-    font-size: 2rem;
-    color: var(--accent-color);
-    margin-bottom: 10px;
-}
-
-#intro p {
-    font-size: 1rem;
-    max-width: 700px;
-    margin: auto;
-}
-
-#past-projects {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-#past-projects h1 {
-    font-size: 2rem;
-    text-align: center;
-    color: var(--accent-color);
-    margin-bottom: 30px;
-}
-
-/* Music Project Container */
-.music-project {
-    display: flex;
-    align-items: center;
-    background: rgba(26, 26, 26, 0.85);
-    padding: 20px;
-    margin-bottom: 30px;
-    gap: 20px;
-    border-radius: 8px;
-}
-
-/* Music Project Image */
-.music-project img {
-    width: 180px;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Music Project Info */
-.music-info {
-    flex: 1;
-}
-
-/* Title & Description */
-.music-info h2 {
-    font-size: 1.8rem;
-    color: var(--accent-color);
-    margin-bottom: 10px;
-}
-
-.music-info p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-/* Embedded Players */
-iframe {
-    width: 100%;
-    border-radius: 5px;
-}
-
-/* Mobile Responsive */
-@media screen and (max-width: 768px) {
-    .music-project {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .music-project img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .music-info h2 {
-        font-size: 1.2rem;
-    }
-}
-
-/* 📱 Mobile: Horizontal Menu */
-@media (max-width: 768px) {
-    .vertical-menu ul {
-        display: flex;
-        flex-direction: row; /* Switch to horizontal */
-        justify-content: center; /* Center items */
-        gap: 20px; /* Space between menu items */
-    }
-
-    .vertical-menu ul li {
-        margin-bottom: 10; /* Remove bottom spacing */
-    }
-
-    .vertical-menu ul li a {
-        flex-direction: column; /* Keep icons above text */
-        font-size: 1rem; /* Reduce text size */
-    }
-
-    .vertical-menu ul li img {
-        width: 60px; /* Adjust icon size */
-    }
-}
-
