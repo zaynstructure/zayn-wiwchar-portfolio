@@ -7,6 +7,7 @@
     --accent-color: #5a6c92;
     --hover-color: #d4a7a1;
     --border-color: #3d2b3a;
+    --link-color: #d4a7a1; /* Complementary color for links */
 }
 
 /* Global Reset */
