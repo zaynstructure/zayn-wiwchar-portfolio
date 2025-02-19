@@ -47,13 +47,15 @@ body {
     min-height: 100vh;
 }
 
-/* Header Image - Reduced Size */
+/* Header Image - Fixed to Prevent Cropping */
 .header-image {
-    max-width: 60%; /* Reduced from 80% */
-    height: auto;
+    width: 100%; /* Full width */
+    max-width: 700px; /* Ensures it's not too large */
+    height: auto; /* Prevents distortion */
     display: block;
     margin: 20px auto;
     border-radius: 5px;
+    object-fit: contain; /* Ensures no part is cut off */
 }
 
 @media screen and (min-width: 1200px) { 
