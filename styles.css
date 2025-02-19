@@ -2,10 +2,10 @@
 
 /* Custom Color Variables */
 :root {
-    --bg-color: #0000000;
+    --bg-color: #000000;
     --text-color: #f0e3d0;
-    --accent-color: #5a6c92;
-    --hover-color: #d4a7a1;
+    --accent-color: #7b88a6; /* Adjusted for better contrast */
+    --hover-color: #e3b2aa; /* Warmer hover effect */
     --border-color: #3d2b3a;
     --link-color: #d4a7a1; /* Complementary color for links */
 }
@@ -15,6 +15,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Animated Grain Effect */
@@ -43,35 +48,36 @@ a {
 
 a:hover {
     color: var(--hover-color);
+    text-decoration: underline;
 }
 
 /* Vertical Menu Button Images */
 .vertical-menu ul li img {
-    width: 60px; /* Reduced size */
+    width: 60px;
     height: auto;
     margin-bottom: 5px;
     opacity: 0.7;
-    transition: opacity 0.3s ease, transform 0.2s ease;
+    transition: opacity 0.3s ease, transform 0.2s ease, filter 0.3s ease;
 }
 
 .vertical-menu ul li img:hover {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.2));
 }
 
 /* Homepage Title Image */
 .homepage-titleimage {
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* Ensure Correct Media Query Placement */
-@media screen and (min-width: 1024px) { 
+@media screen and (min-width: 1200px) { 
     .homepage-titleimage { 
-        max-width: 50%;
-        max-height: 400px;
+        max-width: 55%;
+        max-height: 450px;
     } 
 }
 
@@ -124,6 +130,13 @@ section {
     padding: 20px;
     background: rgba(26, 26, 26, 0.8);
     backdrop-filter: blur(3px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Section Hover Effect */
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
 /* Responsive Adjustments */
@@ -155,6 +168,13 @@ footer {
     margin-top: 50px;
     text-align: center;
     color: var(--accent-color);
-    font-size: 0.8rem;
-    border-top: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 20px 0;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+footer:hover {
+    opacity: 1;
 }
