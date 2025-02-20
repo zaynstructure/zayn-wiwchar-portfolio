@@ -33,6 +33,26 @@ html {
     min-height: 100vh; /* Ensures footer is always at bottom */
 }
 
+/* Header Styling */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Ensure the image aligns with the container */
+.header-image {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Ensures centering */
+}
+
+
+
 /* Body Styling */
 body {
     font-family: 'Space Grotesk', sans-serif;
