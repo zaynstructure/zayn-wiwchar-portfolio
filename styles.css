@@ -186,7 +186,7 @@ body {
 
 /* Sections */
 section {
-    max-width: 800px;
+    max-width: 90%;
     margin: 20px auto;
     padding: 20px;
     background: rgba(26, 26, 26, 0.8);
