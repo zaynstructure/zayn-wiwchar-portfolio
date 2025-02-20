@@ -56,6 +56,23 @@ body {
     min-height: 100vh;
 }
 
+/* Sections */
+section {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(26, 26, 26, 0.8);
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+
 /* Responsive Header Image */
 .header-image-container {
     width: 100%;
