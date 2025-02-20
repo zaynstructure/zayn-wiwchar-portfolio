@@ -152,14 +152,12 @@ body {
 .action-button {
     display: flex;
     align-items: center;
-    background-color: var(--accent-color);
     color: var(--text-color);
     text-decoration: none;
     font-size: 1.2rem;
     padding: 10px 15px;
     border-radius: 5px;
     margin: 10px 0;
-    transition: background 0.3s ease;
     width: 220px; /* Adjust as needed */
     justify-content: center;
     gap: 10px;
