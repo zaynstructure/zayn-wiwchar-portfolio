@@ -170,11 +170,6 @@ body {
     display: inline-block;
 }
 
-/* Hover Effect */
-.action-button:hover {
-    background-color: var(--hover-color);
-}
-
 /* Button Container for Centering */
 .button-container {
     display: flex;
