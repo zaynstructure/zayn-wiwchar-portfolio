@@ -148,6 +148,16 @@ body {
     color: var(--hover-color);
 }
 
+/* Adjust Button Image Size */
+.action-button img {
+    width: 40px; /* Adjust as needed */
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px; /* Adds space between image and text */
+}
+
+
 
 /* Sections */
 section {
