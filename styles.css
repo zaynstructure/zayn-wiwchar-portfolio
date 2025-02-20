@@ -60,7 +60,7 @@ body {
 /* Header Image - Fixed to Prevent Cropping */
 .header-image {
     width: 100%; /* Full width */
-    max-width: 1400px; /* Ensures it's not too large */
+    max-width: 2000px; /* Ensures it's not too large */
     height: auto; /* Prevents distortion */
     display: block;
     margin: 20px auto;
