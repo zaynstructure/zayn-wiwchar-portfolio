@@ -89,10 +89,9 @@ body {
     transform: scale(1.05);
 }
 
-/* Full-size image modal */o
 .image-modal {
     display: none;
-    position: fixed;
+    position: fixed;  /* Keeps it centered on the screen */
     top: 0;
     left: 0;
     width: 100vw;
@@ -103,16 +102,20 @@ body {
     z-index: 1000;
 }
 
-.image-modal img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 8px;
-}
-
+/* When modal is active, make it visible */
 .image-modal.active {
     display: flex;
 }
 
+/* Ensure the image is centered and responsive */
+.image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Close button styling */
 .image-modal .close {
     position: absolute;
     top: 20px;
