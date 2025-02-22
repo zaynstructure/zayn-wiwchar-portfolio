@@ -57,7 +57,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5px 0;
-    backdrop-filter: blur(5px);
     border-radius: 5px;
     border: 1px solid var(--border-color); /* Adds thin border matching h1 color */
     overflow-x: hidden;
