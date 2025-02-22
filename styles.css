@@ -163,6 +163,11 @@ body {
     color: var(--hover-color);
 }
 
+/* Increase Spacing Below Headers */
+h1, h2, h3 {
+    margin-bottom: 15px; /* Adds spacing below headers */
+}
+
 /* Sections */
 section {
     max-width: 90%;
