@@ -58,7 +58,7 @@ body {
     align-items: center;
     padding: 5px 0;
     border-radius: 5px;
-    border: 1px solid var(--border-color); /* Adds thin border matching h1 color */
+    border-bottom: 1px solid var(--border-color); /* Adds thin border matching h1 color */
     overflow-x: hidden;
 }
 
