@@ -63,7 +63,10 @@ body {
     border-bottom: 1px solid var(--border-color); /* Adds thin border matching h1 color */
     overflow-x: hidden;
 }
-
+/* Special Rule for Homepage: Move Menu Below Image */
+#homepage .menu-container {
+    margin-top: 20px; /* Creates spacing after the image */
+}
 /* Ensure images in Visual Art Page are contained */
 .visuals-container {
     display: flex;
