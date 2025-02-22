@@ -57,9 +57,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5px 0;
-    background-color: rgba(34, 34, 34, 0.9);
     backdrop-filter: blur(5px);
-    border-radius: 8px;
+    border-radius: 5px;
     border: 1px solid var(--border-color); /* Adds thin border matching h1 color */
     overflow-x: hidden;
 }
