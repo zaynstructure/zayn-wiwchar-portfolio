@@ -41,7 +41,7 @@ body {
 
 /* Main Container */
 .container {
-    max-width: 100%;
+    max-width: 90%;
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -49,6 +49,9 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow-x: hidden;
+    overflow-x: hidden; /* Ensures no elements break the layout */
+}
+    
 }
 .menu-container {
     width: 100%;
@@ -146,10 +149,11 @@ section:hover {
     justify-content: space-between;
     gap: 40px;
     flex-wrap: wrap;
-    width: 80%;
     margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
-
 .contact-form {
     flex: 1;
     max-width: 500px;
