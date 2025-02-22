@@ -38,7 +38,6 @@ body {
     overflow-x: hidden; /* Prevents page from being cut off */
     width: 100vw; /* Ensures full viewport width */
 }
-}
 
 /* Main Container */
 .container {
