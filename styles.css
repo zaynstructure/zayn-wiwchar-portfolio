@@ -99,7 +99,16 @@ p {
     height: auto;
 }
 
+/* Properly align bullet points */
+ul {
+    padding-left: 20px; /* Controls left indentation for the bullet points */
+    list-style-position: outside; /* Ensures the bullets are properly aligned */
+}
 
+ul li {
+    text-indent: 0; /* Prevents misalignment */
+    margin-bottom: 5px; /* Adds spacing between bullet points */
+}
 
 
 
