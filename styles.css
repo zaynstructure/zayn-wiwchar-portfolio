@@ -245,6 +245,13 @@ section:hover {
     display: block;
 }
 
+.homepage-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Contact Section */
 .contact-section {
     display: flex;
