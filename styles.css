@@ -69,7 +69,35 @@ body {
 /* Special Rule for Homepage: Move Menu Below Image */
 #homepage .menu-container {
     margin-top: 20px; /* Creates spacing after the image */
+      max-width: 90%;}
+
+@media (min-width: 1024px) {
+    #homepage .container {
+        max-width: 80%; /* Restricts width further on desktop */
+    }
 }
+/* Contain the header */
+#homepage header {
+    width: 100%;
+    max-width: 90%; /* Restrict header width */
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    #homepage header {
+        max-width: 80%; /* Further restrict header width on larger screens */
+    }
+}
+
+#homepage .header-image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
 /* Ensure images in Visual Art Page are in a 2-column grid */
 .visuals-container {
     display: grid;
