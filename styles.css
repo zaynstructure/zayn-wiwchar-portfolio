@@ -204,6 +204,21 @@ h1, h2, h3 {
     margin-bottom: 15px; /* Adds space below headers */
 }
 
+/* Center the figure */
+figure {
+    text-align: center;
+    margin: 20px auto; /* Centers it horizontally */
+}
+
+/* Make the caption text smaller and lighter */
+figcaption {
+    font-size: 0.85em;
+    color: #666; /* Lighter text for subtlety */
+    margin-top: 5px;
+}
+
+
+
 /* Retail Image Styling */
 .retail.image {
     max-width: 100%;
