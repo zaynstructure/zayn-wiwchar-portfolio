@@ -77,7 +77,6 @@ p {
     padding: 5px 0;
     border-radius: 5px;
     margin: 0 auto; /* Centers within the page */    
-    border-bottom: 1px solid var(--border-color); /* Adds thin border matching h1 color */
     overflow-x: hidden;
 }
 
@@ -219,7 +218,7 @@ ul li {
 }
 
 h1, h2, h3 {
-    margin-top: 30px; /* Adds space above headers */
+    margin-top: 20px; /* Adds space above headers */
     margin-bottom: 15px; /* Adds space below headers */
 }
 
