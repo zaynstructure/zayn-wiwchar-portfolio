@@ -99,16 +99,16 @@ p {
     height: auto;
 }
 
-/* Ensure all bullet points align properly */
 ul {
-    padding-left: 20px; /* Adjusts left margin for bullet points */
-    list-style-position: outside; /* Ensures bullets are aligned outside the text */
+    padding-left: 25px; /* Ensures bullets align properly */
+    list-style-position: outside; /* Keeps bullets outside the text */
 }
 
 ul li {
-    text-indent: 0; /* Prevents misalignment */
-    margin-bottom: 5px; /* Adds consistent spacing between bullet points */
+    text-indent: 0;
+    margin-bottom: 8px; /* Adds consistent spacing between list items */
     line-height: 1.6; /* Improves readability */
+    max-width: 800px; /* Prevents overly wide text on large screens */
 }
 
 /* Ensure images in Visual Art Page are in a 2-column grid */
