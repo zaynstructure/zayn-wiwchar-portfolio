@@ -222,7 +222,6 @@ section {
     max-width: 90%;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(26, 26, 26, 0.8);
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
