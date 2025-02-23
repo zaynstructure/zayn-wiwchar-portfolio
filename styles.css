@@ -61,6 +61,12 @@ p {
         max-width: 80%; /* Further restrict width on larger screens */
     }
 }
+.container p {
+    max-width: 800px; /* Prevents text from getting too wide */
+    margin: 0 auto; /* Centers the text */
+    line-height: 1.7; /* Improves readability */
+}
+
 .menu-container {
     width: 100%;
     display: flex;
@@ -99,18 +105,19 @@ p {
     height: auto;
 }
 
+/* Fix bullet points to always align properly */
 ul {
-    padding-left: 25px; /* Ensures bullets align properly */
+    padding-left: 40px; /* Ensures proper indentation */
     list-style-position: outside; /* Keeps bullets outside the text */
+    max-width: 800px; /* Prevents text from stretching too wide */
+    margin: 0 auto; /* Centers the list within the container */
 }
 
 ul li {
-    text-indent: 0;
-    margin-bottom: 8px; /* Adds consistent spacing between list items */
+    text-indent: 0; /* Ensures all lines align properly */
+    margin-bottom: 8px; /* Adds spacing between items */
     line-height: 1.6; /* Improves readability */
-    max-width: 800px; /* Prevents overly wide text on large screens */
 }
-
 /* Ensure images in Visual Art Page are in a 2-column grid */
 .visuals-container {
     display: grid;
