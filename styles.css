@@ -99,18 +99,17 @@ p {
     height: auto;
 }
 
-/* Properly align bullet points */
+/* Ensure all bullet points align properly */
 ul {
-    padding-left: 20px; /* Controls left indentation for the bullet points */
-    list-style-position: outside; /* Ensures the bullets are properly aligned */
+    padding-left: 20px; /* Adjusts left margin for bullet points */
+    list-style-position: outside; /* Ensures bullets are aligned outside the text */
 }
 
 ul li {
     text-indent: 0; /* Prevents misalignment */
-    margin-bottom: 5px; /* Adds spacing between bullet points */
+    margin-bottom: 5px; /* Adds consistent spacing between bullet points */
+    line-height: 1.6; /* Improves readability */
 }
-
-
 
 /* Ensure images in Visual Art Page are in a 2-column grid */
 .visuals-container {
