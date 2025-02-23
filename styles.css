@@ -243,10 +243,17 @@ section:hover {
 /* Homepage Image Styling */
 .homepage-image {
     display: block;
-    margin: 0 auto; /* Centers the image */
-    max-width: 50%; /* Ensures it's at most half the size of the text section */
+    margin: 20px auto; /* Centers the image */
+    max-width: 50%; /* At most half the size of text section */
     height: auto;
-    object-fit: contain; /* Ensures the full image is shown without cropping */
+    object-fit: contain; /* Ensures full image is shown without cropping */
+}
+
+/* Make homepage image responsive */
+@media (max-width: 768px) {
+    .homepage-image {
+        max-width: 80%; /* Increase size on smaller screens */
+    }
 }
 
 /* Contact Section */
