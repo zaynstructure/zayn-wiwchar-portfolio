@@ -38,6 +38,11 @@ body {
     overflow-x: hidden; /* Prevents page from being cut off */
     width: 100vw; /* Ensures full viewport width */
 }
+/* Adjust spacing between paragraphs and headers */
+p {
+    margin-bottom: 18px; /* Adds space below paragraphs */
+    line-height: 1.6; /* Increases readability */
+}
 
 /* Main Container */
 .container {
@@ -194,10 +199,11 @@ body {
     color: var(--hover-color);
 }
 
-/* Increase Spacing Below Headers */
 h1, h2, h3 {
-    margin-bottom: 15px; /* Adds spacing below headers */
+    margin-top: 30px; /* Adds space above headers */
+    margin-bottom: 15px; /* Adds space below headers */
 }
+
 /* Retail Image Styling */
 .retail.image {
     max-width: 100%;
