@@ -206,11 +206,6 @@ h1, h2, h3 {
     margin: 20px auto;
 }
 
-/* Flipped Horizontal Image */
-.flipped-horizontal {
-    transform: scaleX(-1);
-}
-
 /* Ensure images are contained within sections */
 .project-section img {
     width: 100%;
@@ -245,11 +240,13 @@ section:hover {
     display: block;
 }
 
+/* Homepage Image Styling */
 .homepage-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
     display: block;
+    margin: 0 auto; /* Centers the image */
+    max-width: 50%; /* Ensures it's at most half the size of the text section */
+    height: auto;
+    object-fit: contain; /* Ensures the full image is shown without cropping */
 }
 
 /* Contact Section */
