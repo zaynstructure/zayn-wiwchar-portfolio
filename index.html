@@ -28,17 +28,6 @@
       padding: 20px;
     }
 
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .header-image {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
     nav ul {
       list-style: none;
       display: flex;
@@ -97,10 +86,6 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="images/Landing.png" alt="A Fun Time" class="header-image">
-  </header>
-
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -116,9 +101,13 @@
   </section>
 
   <div class="vimeo-wrapper">
-    <iframe src="https://player.vimeo.com/video/1096983694?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" title="squarevid"></iframe>
+    <iframe 
+      src="https://player.vimeo.com/video/1096983694?autoplay=1&muted=1&background=1" 
+      allow="autoplay; fullscreen; picture-in-picture" 
+      title="squarevid"
+      style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:6px;">
+    </iframe>
   </div>
-  <script src="https://player.vimeo.com/api/player.js"></script>
 
   <footer>
     <p>&copy; 2025 Zayn Wiwchar - All Rights Reserved.</p>
