@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zayn Wiwchar – Art & Design</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Playfair+Display:ital,wght@1,600&family=Fester&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #111;
@@ -28,12 +28,22 @@
       padding: 20px;
     }
 
+    .name-tag {
+      font-family: 'Fester', sans-serif;
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 1.5rem;
+      color: var(--text);
+      text-transform: uppercase;
+    }
+
     nav ul {
       list-style: none;
       display: flex;
       justify-content: center;
       gap: 30px;
-      margin: 20px 0;
+      margin: 60px 0 20px;
       padding: 0;
     }
 
@@ -55,10 +65,7 @@
     }
 
     section.landing-text h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin-bottom: 10px;
-      color: var(--accent);
+      display: none;
     }
 
     .vimeo-wrapper {
@@ -86,6 +93,7 @@
   </style>
 </head>
 <body>
+  <div class="name-tag">ZAYN WIWCHAR</div>
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -97,7 +105,7 @@
   </nav>
 
   <section class="landing-text">
-    <h1>Layered Fragments</h1>
+    <h1></h1>
   </section>
 
   <div class="vimeo-wrapper">
