@@ -1,62 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZAYN WIWCHAR - Art and Design</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zayn Wiwchar – Art & Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #111;
+      --text: #f0e3d0;
+      --accent: #c96;
+      --hover: #d4a7a1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url('images/IMG_3302.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text);
+      font-family: 'Space Grotesk', sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 20px 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--hover);
+    }
+
+    section.landing-text {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+
+    section.landing-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .video-grid iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: none;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.8rem;
+      color: var(--accent);
+    }
+  </style>
 </head>
-<body id="homepage">
-    <div class="container">
-        <header>
-            <img src="images/Landing.png" alt="A Fun Time" class="header-image">
-        </header>
+<body>
+  <header>
+    <img src="images/Landing.png" alt="A Fun Time" class="header-image">
+  </header>
 
-        <nav class="horizontal-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="visual-art.html">Visuals</a></li>
-                <li><a href="music.html">Music & Sound</a></li>
-                <li><a href="projects.html">Current Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="visual-art.html">Visuals</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-        <section class="landing-text">
-            <h1>Layered Fragments</h1>
-            <p>
-                I am an artist and designer based on the unceded Coast Salish Territory of the Lekwungen and W̠SÁNEČ nations ("Victoria, BC, Canada").
-                My work spans animation, sound, game design, digital media, and painting. I like to explore themes of identity, grief, emotional processing, and alternative ways of structuring society in an abstracted way.
-            </p>
-            <p>
-                The conventions I use visually also shape my approach to music and sound, where I experiment with texture, layering, and form to create immersive, expressive environments.
-                Collaboration and experimentation are central to my practice, always underpinned by a decolonial and decentralizing perspective that draws from my background in social work.
-                <strong>At its core, my work is about using art as a tool for resistance, healing, and reimagining new possibilities.</strong>
-            </p>
-        </section>
+  <section class="landing-text">
+    <h1>Layered Fragments</h1>
+  </section>
 
-        <section class="video-grid">
-            <h2>Selected Video Works</h2>
-            <div class="video-gallery">
-                <div class="video-item">
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Title One" frameborder="0" allowfullscreen></iframe>
-                    <p>Title One</p>
-                </div>
-                <div class="video-item">
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Title Two" frameborder="0" allowfullscreen></iframe>
-                    <p>Title Two</p>
-                </div>
-                <div class="video-item">
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="Title Three" frameborder="0" allowfullscreen></iframe>
-                    <p>Title Three</p>
-                </div>
-            </div>
-        </section>
+  <div class="video-grid">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" allowfullscreen></iframe>
+  </div>
 
-        <footer>
-            <p>&copy; 2025 Zayn Wiwchar - All Rights Reserved.</p>
-        </footer>
-    </div>
+  <footer>
+    <p>&copy; 2025 Zayn Wiwchar - All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
